@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>About</title>
+
+    <style type="text/tailwindcss">
+        @layer components {
+    .container {
+        @apply max-w-full w-[1200px] px-5 mx-auto
+    }
+    .list-item{
+        @apply leading-5 text-red-400
+    }
+    .label{
+        @apply text-base font-[800] leading-8 my-2 block 
+    }
+    
+}
+      </style>
+</head>
+
+<body>
+    <header class="flex items-center h-24">
+        <div class="container">
+            <nav class="h-full cursor-pointer flex justify-between items-center">
+                <h2 class="text-black">Ola Ategun</h2>
+                <ul class="nav-list flex gap-10"></ul>
+            </nav>
+        </div>
+    </header>
+    <!-- hero section -->
+    <section class="container">
+        <div class="flex h-auto  justify-between items-center">
+            <div class="w-[60%]">
+
+                <p class="text-[#B4B4B4] text-2xl font-[800] my-2">Ola Ategun</p>
+                <h2 class="mt-2 mb-4 text-2xl font-[800]">Product designer</h2>
+                <p class="text-base ">
+                    I am Ola, a Product Designer living in Canada. With a solid 3+ years in the field,
+                    I am passionate about crafting designs that bring ideas to life in a user-friendly way. Beyond my
+                    design journey, you'll often find me exploring the realms of art and technology.
+                </p>
+
+                <p class="my-4">
+                    I actually started
+                    off my career as a digital marketer, eventually discovered Product design. I slowly drifted into the
+                    design world and I never looked back.
+                </p>
+                <p>
+                    I thrive on bridging creativity and functionality to create
+                    memorable user experiences. When I'm not immersed in design, you can catch me savoring delicious
+                    food or seeking inspiration in the world around me. Let's connect and embark on a design adventure
+                    together!
+                </p>
+
+
+            </div>
+
+            <div class="w-[300px] h-[500px]">
+                <img class="object-cover rounded-md h-auto w-auto" src="../images/aboutImage.png" alt="about-image" />
+            </div>
+        </div>
+        <div>
+            <p class="text-2xl font-[800] mb-4">
+                Outside design
+            </p>
+            <p class="text-base">
+                Outside design, I’m a big football fan, or soccer as it’s widely known in North America and I also play
+                football in my free time. When it comes to music, Afrobeats and Amapiano rhythms are top in my playlist,
+                constantly fueling my passion for African sounds and beats. I love the likes of Burna boy, Asake, Wizkid
+                , some top South African artistes
+            </p>
+            <p class="my-4 text-base">
+                Art, particularly African-inspired works, holds a special place in my heart. While I may not be the
+                one wielding the brush, I'm often found exploring online galleries or wandering through exhibitions,
+                captivated by the rich cultural heritage and visual storytelling found in each piece. These hobbies
+                not only provide balance to my life but also serve as wellsprings of inspiration, infusing my design
+                work with the same energy, vibrancy, and cultural resonance that I find in football, music, and art.
+            </p>
+
+        </div>
+    </section>
+    <!-- skills section -->
+    <section class="container my-6">
+        <h2 class="text-2xl font-[800] mb-4">Skills</h2>
+        <ul class="skills grid grid-cols-2 gap-4"></ul>
+
+    </section>
+    <!-- tools -->
+    <section class="container my-6">
+        <h2 class="text-2xl font-[800] mb-4">Tools</h2>
+        <ul class="tools grid grid-cols-2 gap-4"></ul>
+
+    </section>
+    <!-- education -->
+    <section class="container mt-16">
+        <h2 class="text-2xl font-[800] mb-4">Education</h2>
+
+
+        <div class="flex font-medium gap-24">
+            <h2>2023</h2>
+            <div class="flex flex-col space-y-2 text-base ">
+                <span>Red River college</span>
+                <span class="text-[#B4B4B4]">Diploma </span>
+                <span>Interaction Design & Web Development</span>
+            </div>
+        </div>
+        <div class="flex font-medium gap-24 my-8">
+            <h2>2020</h2>
+            <div class="flex flex-col space-y-2 text-base ">
+
+                <span>Cresent university Nigeria</span>
+                <span class="text-[#B4B4B4]">Bachelor of Science </span>
+                <span>Computer science</span>
+            </div>
+        </div>
+    </section>
+    <!-- certification -->
+    <section class="container mb-16">
+        <h2 class="text-2xl font-[800] mb-4">Certifications</h2>
+        <div class="flex font-medium gap-24 my-8">
+            <h2>2022</h2>
+            <div class="flex flex-col space-y-2 text-base ">
+
+                <span>Responsive websites with HTML, CSS and Javascript</span>
+                <span class="text-[#B4B4B4]">Udemy </span>
+
+            </div>
+        </div>
+        <div class="flex font-medium gap-24 my-8">
+            <h2>2021</h2>
+            <div class="flex flex-col space-y-2 text-base ">
+
+                <span>Product design
+                </span>
+                <span class="text-[#B4B4B4]">Terra Learning </span>
+
+            </div>
+        </div>
+        <div class="flex font-medium gap-24 my-8">
+            <h2>2021</h2>
+            <div class="flex flex-col space-y-2 text-base ">
+
+                <span>
+                    Jobberman soft-skills training
+
+                </span>
+                <span class="text-[#B4B4B4]">Jobberman</span>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-black text-white">
+        <div class="container text-lightWhite pt-4 space-y-2">
+            <p class="font-[600] text-2xl">Let's connect</p>
+            <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
+                <li>
+                    <a>Behance</a>
+                </li>
+                <li>
+                    <a>Dribble</a>
+                </li>
+                <li>
+                    <a>LinkedIn</a>
+                </li>
+
+            </ul>
+
+            <div class="flex justify-between">
+                <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
+                <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+
+                    <li class=>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Resume</a>
+                    </li>
+                    <li>
+                        <a href="../src//html/contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <hr class="mt-4" />
+            <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#D96767",
+                    secondary: "#DE9145",
+                    gray: "#8C8A8A",
+                    lightBlue: "#F1F1F1",
+                    lightWhite: "#B4B4B4",
+                    input: "#F6F6F6"
+                },
+            },
+        }
+    }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/index.js"></script>
+
+</html>

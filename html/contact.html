@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+    .container {
+        @apply max-w-full w-[1200px] px-5 mx-auto
+    }
+    .list-item{
+        @apply leading-5 text-red-400
+    }
+    .label{
+        @apply text-base font-[800] leading-8 my-2 block 
+    }
+    .input{
+        @apply w-full px-3 py-2 bg-input border-none
+    }
+}
+      </style>
+</head>
+
+<body>
+    <header class="flex items-center h-24">
+        <div class="container">
+            <nav class="h-full cursor-pointer flex justify-between items-center">
+                <h2 class="font-semibold text-3xl">Ola Ategun</h2>
+                <ul class="nav-list flex w-1/2 justify-between"></ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container my-12 space-y-4">
+        <p class="text-3xl font-[800] leading-12 my-2">Contact</p>
+        <p class="font-medium text-base">Get in touch for collaborations</p>
+        <hr class=" my-4 border-solid border-[1px] border-input" />
+        <div class="w-[60%] flex justify-between h-auto items-center">
+            <div>
+                <p>ategunabass@gmail.com</p>
+                <p class="text-gray">Email</p>
+
+            </div>
+            <div>
+                <p>+1(902) 316-0567</p>
+                <p class="text-gray">Phone number</p>
+            </div>
+        </div>
+        <div
+            class="flex gap-2 w-[150px] text-center justify-center border-[2px]  border-input rounded-md p-3 h-auto items-center">
+            <i class="fa fa-clone text-gray" aria-hidden="true"></i>
+            <p class="text-xs">Copy email</p>
+        </div>
+        <form class="my-24">
+            <p class="text-3xl font-[800] leading-12 my-2">Send a message</p>
+            <div class="flex w-full justify-between gap-12 ">
+                <div class="w-full">
+                    <label class="label flex h-auto items-center">Name <span><i
+                                class="fa fa-asterisk text-red-500 text-[8px]" aria-hidden="true"></i>
+                        </span></label>
+                    <input type="text" class="input" />
+                </div>
+                <div class="w-full">
+                    <label for="default-input" class="label ">Email
+                        <span><i class="fa fa-asterisk text-red-500 text-[8px]" aria-hidden="true"></i>
+                        </span>
+                    </label>
+                    <input type="text" id="default-input" class="input">
+                </div>
+            </div>
+            <div>
+                <label class="label">Type your message here
+                    <span><i class="fa fa-asterisk text-red-500 text-[8px]" aria-hidden="true"></i>
+                    </span>
+                </label>
+                <textarea class="w-full bg-input" rows={4}></textarea>
+            </div>
+            <button type="submit"
+                class="py-3 px-2 rounded-md text-center text-white border-2 my-3 bg-secondary border-secondary">Send a
+                message</button>
+        </form>
+
+
+    </section>
+    <footer class="bg-black">
+        <div class="container text-lightWhite pt-4 space-y-2">
+            <p class="font-[600] text-2xl">Let's connect</p>
+            <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
+                <li>
+                    <a>Behance</a>
+                </li>
+                <li>
+                    <a>Dribble</a>
+                </li>
+                <li>
+                    <a>LinkedIn</a>
+                </li>
+
+            </ul>
+
+            <div class="flex justify-between">
+                <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
+                <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+
+                    <li class=>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Resume</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <hr class="mt-4" />
+            <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
+        </div>
+    </footer>
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#D96767",
+                    secondary: "#DE9145",
+                    gray: "#8C8A8A",
+                    lightBlue: "#F1F1F1",
+                    lightWhite: "#B4B4B4",
+                    input: "#F6F6F6"
+                },
+            },
+        }
+    }
+</script>
+<script src="../js/index.js
+    "></script>
+
+</html>

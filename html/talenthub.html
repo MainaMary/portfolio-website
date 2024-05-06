@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <title>Talent Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+    .container {
+        @apply max-w-full w-[1200px] px-5 mx-auto
+    }
+    .list-item{
+        @apply leading-5 text-red-400
+    }
+    .label{
+        @apply text-base font-[800] leading-8 my-2 block 
+    }
+    .input{
+        @apply w-full px-3 py-2 bg-input border-none
+    }
+    .title{
+        @apply text-2xl font-medium my-4
+    }
+    .sub-title{
+        @apply text-[#C80000] text-[20px] font-medium
+    }
+    .circular-img{
+        @apply w-[80px] h-[80px] rounded-full flex m-auto justify-center items-center *:text-sm
+    }
+}
+      </style>
+</head>
+
+<body>
+    <header class="flex items-center h-24">
+        <div class="container">
+            <nav class="h-full cursor-pointer flex justify-between items-center">
+                <h2 class="font-semibold text-3xl">Ola Ategun</h2>
+                <ul class="nav-list flex w-1/2 justify-between"></ul>
+            </nav>
+        </div>
+    </header>
+    <!-- hero section -->
+    <section class="bg-[#F8FDFF] pb-12">
+        <div class="flex gap-12 container h-auto justify-center">
+            <div class="w-[80%] h-auto">
+                <img class="object-cover w-full h-full" src="../images/moxie.png" alt="img" />
+            </div>
+            <div>
+                <div class="w-[300px] h-[300px]">
+                    <img class="h-full w-full object-cover" src="../images/maxieOne.png" alt="img-one" />
+                    <img class="h-full w-full object-cover" src="../images/maxieTwo.png" alt="img-two" />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="md:my-16 container">
+        <h2 class="title">Maxie Talent Hub</h2>
+        <p class="leading-6 text-base">
+            Moxie is a global leader in talent facilitation connecting companies with a curated pool of
+            ready-to-work, thoroughly vetted, and trusted professionals. With a commitment to excellence, Moxie
+            alleviates the challenges of talent acquisition, fostering a dynamic environment where businesses and
+            professionals converge for mutual success.
+        </p>
+        <div class="flex items-center  w-1/2 justify-between h-auto mt-12">
+            <div>
+                <h4 class="font-medium">My role</h4>
+                <span> Product Designer</span>
+            </div>
+            <div>
+                <h4 class="font-medium">Timeline</h4>
+                <span>1 month (2023)</span>
+            </div>
+            <div>
+                <h4 class="font-medium">Tools</h4>
+                <psan>Figma, Adobe <br />Photoshop, Smaply</psan>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- overview section -->
+    <div class="mt-12 bg-[#F9F9F9] py-12">
+        <div class="container">
+            <h4 class="sub-title">Overview</h4>
+            <h4>The problem</h4>
+            <p class="my-4">
+                When Moxie started, they faced a big challenge—lacking a dedicated online platform, the entirety of our
+                hiring process relied heavily on the exchange of emails. This was time-cosuming, and it made connecting
+                companies with the right talent harder. Without a central online space, our hiring workflow wasn't as
+                smooth as we wanted. Recognizing the pressing need for a modern, user-friendly solution (website), Moxie
+                embarked on the journey to revolutionize its operations by creating a dynamic website that would
+                transcend the limitations posed by conventional communication methods.
+
+            </p>
+            <div>
+                <h4 class="title">Design process</h4>
+                <ul class="flex gap-2 bg-white rounded-md px-2 py-3 justify-between mb-12">
+                    <li><a>Research icon</a></li>
+                    <li><a>Analyze icon</a></li>
+                    <li><a>Design icon</a></li>
+                    <li><a>User testing icon</a></li>
+                    <li><a>Iterate icon</a></li>
+                    <li><a>Finalize</a></li>
+                </ul>
+
+            </div>
+            <div class="flex w-1/2 justify-between">
+                <div>
+                    <h4 class="text-base font-weight font-medium">Reasearch Methods</h4>
+                    <ul>
+                        <li>Online survey (Google form)</li>
+                        <li>In-person interview</li>
+                        <li>Research online</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-base font-weight font-medium">Target Users</h4>
+                    <ul>
+                        <li>Hiring managers</li>
+                        <li>IT professionals </li>
+                        <li>Clients outsourcing pojects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User research -->
+    <div class="container py-12">
+        <h4 class="sub-title">User research</h4>
+        <div class="research-list space-y-2"></div>
+    </div>
+    <!-- personas section -->
+    <section class="my-12">
+        <div class="py-12 bg-[#F9F9F9]">
+            <div class="container">
+                <h4 class="sub-title">Personas</h4>
+                <h4 class="ttitle my-4">User Persona 1</h4>
+                <div class=" flex w-full justify-between gap-12">
+
+                    <div class="font-medium w-[20%]">
+                        <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/persona1.png"
+                            alt="persona1" />
+                        <p>Sarah <br />
+                            <span class="uppercase">Hr manager</span>
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h4 class="sub-title">Background</h4>
+                        <p class="my-4">Sarah is a seasoned HR manager with over a decade of experience in the tech
+                            industry. She holds a bachelor's degree in Human Resources Management and has worked in
+                            various
+                            HR roles before joining TechSolutions Inc. Sarah is responsible for overseeing the
+                            recruitment
+                            process for technical positions within the company.</p>
+                        <div class="persona1-details"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class=" py-12">
+            <div class="container">
+                <h4 class="sub-title">Personas</h4>
+                <h4 class="ttitle my-4">User Persona 2</h4>
+                <div class=" flex w-full justify-between gap-12">
+
+                    <div class="font-medium w-[20%]">
+                        <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/persona2.png"
+                            alt="persona1" />
+                        <p>David<br />
+                            <span class="uppercase">Web developer</span>
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h4 class="sub-title">Background</h4>
+                        <p class="my-4">
+                            David is a highly skilled software developer with a passion for creating innovative
+                            solutions. He holds a master's degree in Computer Science and has worked in various tech
+                            companies before transitioning to freelance work. David specializes in full-stack web
+                            development and has experience working with startups and established businesses.
+                        </p>
+                        <div class="persona2-details"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- prototype section desktop -->
+    <section class="bg-[#F9F9F9] py-12">
+        <div class=" container">
+            <h6 class="sub-title">Prototypes</h6>
+            <h4 class="title my-3">Selected Wireframes</h4>
+            <h4 class="sub-title">Desktop screens</h4>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="../images/desktop1.png" alt="desktop-img" />
+                <img src="../images/desktop2.png" alt="desktop-img" />
+                <img src="../images/desktop3.png" alt="desktop-img" />
+                <img src="../images/desktop4.png" alt="desktop-img" />
+                <img src="../images/desktop5.png" alt="desktop-img" />
+                <img src="../images/desktop6.png" alt="desktop-img" />
+                <img src="../images/desktop7.png" alt="desktop-img" />
+                <img src="../images/desktop8.png" alt="desktop-img" />
+            </div>
+
+        </div>
+    </section>
+    <!-- prototype section mobile -->
+    <div class=" container space-y-4">
+
+        <h4 class="title">Selected Wireframes</h4>
+        <h4 class="sub-title my-3">Desktop screens</h4>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- <div class="mobile-img"></div> -->
+            <img src="../images/mobile1.png" alt="desktop-img" />
+            <img src="../images/mobile2.png" alt="desktop-img" />
+            <img src="../images/mobile3.png" alt="desktop-img" />
+            <img src="../images/mobile4.png" alt="desktop-img" />
+            <img src="../images/mobile5.png" alt="desktop-img" />
+            <img src="../images/mobile6.png" alt="desktop-img" />
+        </div>
+
+    </div>
+    </section>
+    <!-- brand identity section -->
+    <section class="bg-[#F9F9F9] py-12">
+        <div class="container">
+            <h4 class="sub-title">Brand</h4>
+            <h4 class="title">Visual identity</h4>
+            <div class="flex gap-3 h-auto items-center">
+                <p class="font-semibold text-[128px]"><span class="uppercase">A</span>a</p>
+                <div class="flex flex-col">
+                    <span>Mustica Pro (semi bold)</span>
+                     <span>Mustica Pro (medium)</span>
+                      <span>Mustica Pro (regular)</span>
+                </div>
+                <div class="relative flex h-auto items-center">
+                    <div class="circular-img text-white bg-[#004EC6]">004EC6</div>
+                    <div class="circular-img bg-black text-white absolute right-[-70px]">1E1E1E</div>
+                    <div class="circular-img text-[#7E7E7E] bg-[#FFDAB9] absolute right-[-140px]">FFDAB9</div>
+                </div>
+                
+            </div>
+            <h4 class="title">Image representations</h4>
+                <div class="flex justify-center gap-2">
+                  <div>
+                    <img src="../images/visualImage3.png" alt=""/>
+                    <h4>Professional(human) images</h4>
+                  </div>
+                  <div>
+                     <img src="../images/visualImage2.png" alt=""/>
+                    <h4>illustrations</h4>
+                  </div>
+                </div>
+        </div>
+    </section>
+    <!-- fidelity mockups desktop -->
+    <section>
+        <div class="container my-12">
+            <h4 class="sub-title">High fidelity desktops</h4>
+            <h4 class="title">Desktop Screens</h4>
+            <div class="flex flex-col gap-2">
+                <div class="w-400px h-auto">
+                     <img src="../images/aboutUs.png" alt="mockup" class="h-full w-full object-cover"/>
+                </div>
+               
+               
+                <img src="../images/talents.png" alt="mockup"/>
+                <img src="../images/createAccount.png" alt="mockup"/>
+                <img src="../images/dashboard1.png" alt="mockup"/>
+                <img src="../images/dashboard2.png" alt="mockup"/>
+                <img src="../images/dashboard3.png" alt="mockup"/>
+                <img src="../images/profileView.png" alt="mockup"/>
+                <img src="../images/team.png" alt="mockup"/>
+            </div>
+        </div>
+    </section>
+    <!-- fidelity mockups mobile -->
+    <!-- conclusion -->
+    <section class="bg-[#F9F9F9] py-12">
+       <div class="container">
+         <h4 class="sub-title">High fidelity mockups</h4>
+         <h4 class="title">Mobile Screens</h4>
+        <div class="grid grid-cols-2 gap-4 my-8">
+          <img src="../images/homepageMobile.png" alt="mockup"/>
+          <img src="../images/leadersMobile.png" alt="mockup"/>
+          <img src="../images/talentsMobile.png" alt="mockup"/>
+          <img src="../images/aboutUsMobile.png" alt="mockup"/>
+          <img src="../images/orgMobile.png" alt="mockup"/>
+        </div>
+       </div>
+    </section>
+    <div class="container my-12">
+        <h6 class="sub-title">Conclusion</h6>
+        <h6 class="title">Takeaway</h6>
+        <p>
+            In the process of developing this project, I found that conducting thorough user research and embracing
+            iterative design methodologies were crucial pillars in crafting a successful hiring platform. By immersing
+            myself in the perspectives of both hiring organizations and professionals seeking opportunities, I gained
+            invaluable insights into their needs, pain points, and preferences.
+        </p>
+        <p class="my-8">
+            This empathetic approach not only informed the initial design but also guided iterative refinements
+            throughout the development process. By actively soliciting and incorporating user feedback, I witnessed
+            firsthand the transformative power of user-centered design in driving meaningful improvements and ensuring
+            the platform resonated with its intended audience. This experience reinforced my conviction in the efficacy
+            of user-centric design principles to deliver impactful solutions that truly address the needs of users.
+        </p>
+        <h6 class="sub-title">Walkthrough</h6>
+    </div>
+
+    <footer class="bg-black">
+        <div class="container text-lightWhite pt-4 space-y-2">
+            <p class="font-[600] text-2xl">Let's connect</p>
+            <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
+                <li>
+                    <a>Behance</a>
+                </li>
+                <li>
+                    <a>Dribble</a>
+                </li>
+                <li>
+                    <a>LinkedIn</a>
+                </li>
+
+            </ul>
+
+            <div class="flex justify-between">
+                <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
+                <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+
+                    <li class=>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Resume</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <hr class="mt-4" />
+            <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
+        </div>
+    </footer>
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#D96767",
+                    secondary: "#DE9145",
+                    gray: "#8C8A8A",
+                    lightBlue: "#F1F1F1",
+                    lightWhite: "#B4B4B4",
+                    input: "#F6F6F6",
+                    skyBlue: "#F9F9F9"
+                },
+            },
+        }
+    }
+</script>
+<script src="../js/index.js
+    "></script>
+<script src="../js/talentHub.js"></script>
+
+</html>

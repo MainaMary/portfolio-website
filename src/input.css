@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .container {
+        @apply max-w-full w-[1200px] px-5 mx-auto
+    }
+        .list-item {
+            @apply leading-5 text-red-400
+        }
+    
+        .label {
+            @apply text-base font-[800] leading-8 my-2 block
+        }
+    
+        .input {
+            @apply w-full px-3 py-2 bg-input border-none
+        }
+}
