@@ -50,11 +50,11 @@
     <!-- hero section -->
     <section class="bg-[#F8FDFF] pb-12">
         <div class="flex gap-12 container h-auto justify-center">
-            <div class="w-[80%] h-auto">
+            <div class="w-[300px] md:w-[80%] h-auto">
                 <img class="object-cover w-full h-full" src="../images/moxie.png" alt="img" />
             </div>
             <div>
-                <div class="w-[300px] h-[300px]">
+                <div class="md:w-[300px] w-[100px] h-[100px] md:h-[300px]">
                     <img class="h-full w-full object-cover" src="../images/maxieOne.png" alt="img-one" />
                     <img class="h-full w-full object-cover" src="../images/maxieTwo.png" alt="img-two" />
                 </div>
@@ -71,7 +71,7 @@
             alleviates the challenges of talent acquisition, fostering a dynamic environment where businesses and
             professionals converge for mutual success.
         </p>
-        <div class="flex items-center  w-1/2 justify-between h-auto mt-12">
+        <div class="grid grid-cols-2 md:grid-cols-3   w- full md:w-1/2 mt-12 gap-3">
             <div>
                 <h4 class="font-medium">My role</h4>
                 <span> Product Designer</span>
@@ -82,7 +82,7 @@
             </div>
             <div>
                 <h4 class="font-medium">Tools</h4>
-                <psan>Figma, Adobe <br />Photoshop, Smaply</psan>
+                <p>Figma, Adobe, <br /> Photoshop, Samply</p>
             </div>
         </div>
 
@@ -104,17 +104,42 @@
             </p>
             <div>
                 <h4 class="title">Design process</h4>
-                <ul class="flex gap-2 bg-white rounded-md px-2 py-3 justify-between mb-12">
-                    <li><a>Research icon</a></li>
-                    <li><a>Analyze icon</a></li>
-                    <li><a>Design icon</a></li>
-                    <li><a>User testing icon</a></li>
-                    <li><a>Iterate icon</a></li>
+                <ul class="block md:flex gap-2 bg-white rounded-md px-2 py-3 justify-center text-center m-auto md:justify-between mb-12">
+                    <li>
+                        <a>Research
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+                    </li>
+                    <li><a>Analyze </a></li>
+                    <li>
+                        <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+                    </li>
+                    <li><a>Design </a></li>
+                    <li>
+                        <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+                    </li>
+                    <li><a>User testing </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+                    </li>
+                    <li><a>Iterate</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+                    </li>
                     <li><a>Finalize</a></li>
                 </ul>
 
             </div>
-            <div class="flex w-1/2 justify-between">
+            <div class="block md:flex w-1/2 justify-between">
                 <div>
                     <h4 class="text-base font-weight font-medium">Reasearch Methods</h4>
                     <ul>
@@ -145,7 +170,7 @@
             <div class="container">
                 <h4 class="sub-title">Personas</h4>
                 <h4 class="ttitle my-4">User Persona 1</h4>
-                <div class=" flex w-full justify-between gap-12">
+                <div class="block md:flex w-full justify-between gap-12">
 
                     <div class="font-medium w-[20%]">
                         <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/persona1.png"
@@ -175,7 +200,7 @@
             <div class="container">
                 <h4 class="sub-title">Personas</h4>
                 <h4 class="ttitle my-4">User Persona 2</h4>
-                <div class=" flex w-full justify-between gap-12">
+                <div class=" block md:flex w-full justify-between gap-12">
 
                     <div class="font-medium w-[20%]">
                         <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/persona2.png"
@@ -244,31 +269,31 @@
         <div class="container">
             <h4 class="sub-title">Brand</h4>
             <h4 class="title">Visual identity</h4>
-            <div class="flex gap-3 h-auto items-center">
-                <p class="font-semibold text-[128px]"><span class="uppercase">A</span>a</p>
-                <div class="flex flex-col">
+            <div class=" grid grid-cols-2 md:grid-cols-3 gap-3 h-auto items-center">
+                <p class="font-semibold text-[90px] md:text-[128px]"><span class="uppercase">A</span>a</p>
+                <div class="flex flex-col md:w-0">
                     <span>Mustica Pro (semi bold)</span>
-                     <span>Mustica Pro (medium)</span>
-                      <span>Mustica Pro (regular)</span>
+                    <span>Mustica Pro (medium)</span>
+                    <span>Mustica Pro (regular)</span>
                 </div>
                 <div class="relative flex h-auto items-center">
                     <div class="circular-img text-white bg-[#004EC6]">004EC6</div>
-                    <div class="circular-img bg-black text-white absolute right-[-70px]">1E1E1E</div>
-                    <div class="circular-img text-[#7E7E7E] bg-[#FFDAB9] absolute right-[-140px]">FFDAB9</div>
+                    <div class="circular-img bg-black text-white absolute right-[-30px] md:right-[-70px]">1E1E1E</div>
+                    <div class="circular-img text-[#7E7E7E] bg-[#FFDAB9] absolute right-[-100px] md:right-[-140px]">FFDAB9</div>
                 </div>
-                
+
             </div>
             <h4 class="title">Image representations</h4>
-                <div class="flex justify-center gap-2">
-                  <div>
-                    <img src="../images/visualImage3.png" alt=""/>
+            <div class="flex justify-center gap-2">
+                <div>
+                    <img src="../images/visualImage3.png" alt="" />
                     <h4>Professional(human) images</h4>
-                  </div>
-                  <div>
-                     <img src="../images/visualImage2.png" alt=""/>
-                    <h4>illustrations</h4>
-                  </div>
                 </div>
+                <div>
+                    <img src="../images/visualImage2.png" alt="" />
+                    <h4>illustrations</h4>
+                </div>
+            </div>
         </div>
     </section>
     <!-- fidelity mockups desktop -->
@@ -278,34 +303,34 @@
             <h4 class="title">Desktop Screens</h4>
             <div class="flex flex-col gap-2">
                 <div class="w-400px h-auto">
-                     <img src="../images/aboutUs.png" alt="mockup" class="h-full w-full object-cover"/>
+                    <img src="../images/aboutUs.png" alt="mockup" class="h-full w-full object-cover" />
                 </div>
-               
-               
-                <img src="../images/talents.png" alt="mockup"/>
-                <img src="../images/createAccount.png" alt="mockup"/>
-                <img src="../images/dashboard1.png" alt="mockup"/>
-                <img src="../images/dashboard2.png" alt="mockup"/>
-                <img src="../images/dashboard3.png" alt="mockup"/>
-                <img src="../images/profileView.png" alt="mockup"/>
-                <img src="../images/team.png" alt="mockup"/>
+
+
+                <img src="../images/talents.png" alt="mockup" />
+                <img src="../images/createAccount.png" alt="mockup" />
+                <img src="../images/dashboard1.png" alt="mockup" />
+                <img src="../images/dashboard2.png" alt="mockup" />
+                <img src="../images/dashboard3.png" alt="mockup" />
+                <img src="../images/profileView.png" alt="mockup" />
+                <img src="../images/team.png" alt="mockup" />
             </div>
         </div>
     </section>
     <!-- fidelity mockups mobile -->
     <!-- conclusion -->
     <section class="bg-[#F9F9F9] py-12">
-       <div class="container">
-         <h4 class="sub-title">High fidelity mockups</h4>
-         <h4 class="title">Mobile Screens</h4>
-        <div class="grid grid-cols-2 gap-4 my-8">
-          <img src="../images/homepageMobile.png" alt="mockup"/>
-          <img src="../images/leadersMobile.png" alt="mockup"/>
-          <img src="../images/talentsMobile.png" alt="mockup"/>
-          <img src="../images/aboutUsMobile.png" alt="mockup"/>
-          <img src="../images/orgMobile.png" alt="mockup"/>
+        <div class="container">
+            <h4 class="sub-title">High fidelity mockups</h4>
+            <h4 class="title">Mobile Screens</h4>
+            <div class="grid grid-cols-2 gap-4 my-8">
+                <img src="../images/homepageMobile.png" alt="mockup" />
+                <img src="../images/leadersMobile.png" alt="mockup" />
+                <img src="../images/talentsMobile.png" alt="mockup" />
+                <img src="../images/aboutUsMobile.png" alt="mockup" />
+                <img src="../images/orgMobile.png" alt="mockup" />
+            </div>
         </div>
-       </div>
     </section>
     <div class="container my-12">
         <h6 class="sub-title">Conclusion</h6>

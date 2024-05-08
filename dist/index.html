@@ -18,22 +18,30 @@
     <div class="container">
       <nav class="h-full cursor-pointer flex justify-between items-center">
         <h2 class="font-semibold text-2xl">Ola Ategun</h2>
-        <ul class="nav-list  md:hidden flex gap-10"></ul>
+        <ul class="nav-list hidden md:flex gap-10"></ul>
       </nav>
     </div>
   </header>
   <!-- hero section -->
   <section>
-    <div class="flex  gap-3 container items-center h-full space-y-4">
+    <div class="block md:flex  gap-3 container items-center h-full space-y-4">
       <div class="w-full md:w-[90%] h-auto">
-        <p class="text-3xl leading-10 font-[800]">
+        <p class="hidden md:block text-3xl text-center md:text-start leading-8 md:leading-10 font-[800]">
           <span class="text-primary">Hi, I'm Ola.</span>
           <br />
           I’m a <span class="text-primary">Product </span><span class="text-secondary">Designer</span> who crafts
           digital
           <br />journeys that captivate and connect users.
         </p>
-        <div class="space-y-2 my-8 text-xl font-medium leading-6">
+        <!-- mobile design -->
+        <p class="text-xl md:hidden block text-center md:text-start leading-8 md:leading-10 font-[800]">
+          <span class="text-primary">Hi, I'm Ola.</span>
+          
+          I’m a <span class="text-primary">Product </span><span class="text-secondary">Designer</span> who crafts
+          digital
+          <br />journeys that captivate and connect users.
+        </p>
+        <div class="hidden md:block space-y-2 my-8 text-xl font-medium leading-6">
           <div class="flex h-auto gap-1 items-center">
             <p class="text-gray">UI/UX Designer Terra</p>
             <p>Technologies</p>
@@ -53,27 +61,46 @@
         </div>
       </div>
       <div class="relative">
-        <div class="w-[350px] h-[500px] text-end">
-          <img class="w-full rounded-lg object-cover absolute z-40 h-full" src="../images/heroImage.png"
+        <div class="w-[500px] md:w-[350px] h-[450px] md:h-[500px]">
+          <img class="w-auto m-auto md:w-full rounded-lg object-cover absolute z-40 h-full" src="../images/heroImage.png"
             alt="hero-image" />
-          <img class="rounded-lg w-auto h-full absolute z-20 left-6 top-3 object-cover" src="../images/heroImage2.svg"
+          <img class="rounded-lg m-auto w-auto md:w-auto h-full absolute z-20 left-6 top-3 object-cover" src="../images/heroImage2.svg"
             alt="hero-image" />
         </div>
       </div>
+      <!-- mobile design -->
+      <div class="flex flex-col md:hidden m-auto space-y-2 my-8  text-[12px] md:text-xl font-medium leading-6">
+          <div class="flex m-auto h-auto gap-1 items-center">
+            <p class="text-gray">UI/UX Designer Terra</p>
+            <p>Technologies</p>
+            <img src="../images/vector.png" class="w-[10px] font-bold text-black h-[10px]" alt="icon" />
+          </div>
+          <div class="flex m-auto h-auto gap-1 items-center">
+            <p class="text-gray">Previously a UI Designer at</p>
+            <p>Empowered Futures</p>
+            <img src="../images/vector.png" class="w-[10px] font-bold text-black h-[10px]" alt="icon" />
+          </div>
+
+          <div class="flex m-auto h-auto gap-1 items-center">
+            <p class="text-gray">Student at</p>
+            <p>Red River College</p>
+            <img src="../images/vector.png" class="w-[10px] font-bold text-black h-[10px]" alt="icon" />
+          </div>
+        </div>
     </div>
   </section>
   <!-- projects section -->
   <section class="container">
-    <p class="text-3xl font-[800] leading-12 my-2">Selected projects</p>
-    <div class="projects-card grid gap-24 grid-cols-2">
+    <p class="text-base md:text-3xl font-[800] leading-12 my-2">Selected projects</p>
+    <div class="projects-card grid gap-12 md:gap-24 grid-cols-1 md:grid-cols-2">
       <div>
-        <a class="flex justify-center m-auto items-center h-auto py-12 bg-lightBlue rounded-md my-2 cursor-pointer">
-          <div class="w-[200px] h-[200px]">
-            <img class="h-full w-full object-cover" src="../images/moxie.png" />
+        <a class="flex justify-center m-auto items-center h-auto py-8 md:py-12 bg-lightBlue  rounded-md my-2 cursor-pointer">
+          <div class=" w-[200px] h-[200px]">
+            <img class="h-full w-auto md:w-full object-cover" src="../images/moxie.png" />
           </div>
         </a>
         <div class="space-y-2">
-          <p class="text-2xl font-[800]">
+          <p class="text-base md:text-2xl font-[800]">
             Moxie talent hub
             <span class="text-gray text-base font-medium">I Web & Mobile</span>
           </p>
@@ -85,13 +112,13 @@
         </div>
       </div>
       <div>
-        <div class="flex justify-center m-auto items-center h-auto py-12 bg-lightBlue rounded-md my-2">
+        <div class="flex justify-center m-auto items-center h-auto py-8 md:py-12 bg-lightBlue rounded-md my-2">
           <div class="w-[200px] h-[200px]">
             <img class="h-full w-full object-cover" src="../images/eazy.png" />
           </div>
         </div>
         <div class="space-y-2">
-          <p class="text-2xl font-[800]">
+          <p class="text-base md:text-2xl font-[800]">
             Eazysend<span class="text-gray text-base font-medium">I Mobile</span>
           </p>
           <p class="text-gray text-base font-semibold">Product Designer</p>
@@ -103,13 +130,13 @@
         </div>
       </div>
       <div>
-        <div class="flex justify-center m-auto items-center h-auto py-12 bg-lightBlue rounded-md my-2">
+        <div class="flex justify-center m-auto items-center h-auto py-8 md:py-12 bg-lightBlue rounded-md my-2">
           <div class="w-[200px] h-[200px]">
             <img class="h-full w-full object-cover" src="../images/mega.png" />
           </div>
         </div>
         <div class="space-y-2">
-          <p class="text-2xl font-[800]">
+          <p class="text-base md:text-2xl font-[800]">
             Megashop<span class="text-gray text-base font-medium">I Mobile</span>
           </p>
           <p class="text-gray text-base font-semibold">UI/UX Designer</p>
@@ -126,11 +153,11 @@
           </div>
         </div>
         <div class="space-y-2">
-          <p class="text-2xl font-[800]">
+          <p class="text-base md:text-2xl font-[800]">
             Finexa
-            <span class="text-gray text-base font-medium">I Mobile</span>
+            <span class="text-gray  text-[12px] md:text-base font-medium">I Mobile</span>
           </p>
-          <p class="text-gray text-base font-semibold">UI/UX Designer</p>
+          <p class="text-gray text-[12px] md:text-base  font-semibold">UI/UX Designer</p>
           <p class="text-base leading-6 font-medium">
             A platform for connecting companies with skilled professionals,
             ensuring seamless hiring and success for all involved.
@@ -140,19 +167,19 @@
     </div>
   </section>
   <!-- side projects section -->
-  <section class="container my-36">
-    <p class="text-3xl font-[800] leading-12 my-2">Projects</p>
-    <div class="grid grid-cols-3 gap-3">
+  <section class="container my-24 md:my-36">
+    <p class="text-base md:text-3xl font-[800] leading-12 my-2">Projects</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
       <img src="../images/carge.png" alt="carge" />
       <img src="../images/brycee.png" alt="carge" />
       <img src="../images/readmore.png" alt="carge" />
     </div>
   </section>
   <!-- footer section -->
-  <footer class="bg-black">
+  <footer class="bg-black text-[14px] md:text-xl">
     <div class="container text-lightWhite pt-4 space-y-2">
-      <p class="font-[600] text-2xl">Let's connect</p>
-      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
+      <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
+      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
         <li>
           <a>Behance</a>
         </li>
@@ -165,9 +192,9 @@
 
       </ul>
 
-      <div class="flex justify-between">
-        <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
-        <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+      <div class="block md:flex justify-between text-[14px] md:text-xl">
+        <p class=" font-medium">Email- ategunabass@gmail.com</p>
+        <ul class="flex gap-8 cursor-pointer font-medium">
 
           <li class=>
             <a>About</a>
@@ -185,7 +212,7 @@
 
       </div>
       <hr class="mt-4" />
-      <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
+      <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
     </div>
   </footer>
   <script src="../js/index.js

@@ -5,7 +5,7 @@
 @tailwind utilities;
 @layer components {
     .container {
-        @apply max-w-full md:w-[1200px] px-5 mx-auto
+        @apply max-w-full w-[1200px] px-5 mx-auto
     }
         .list-item {
             @apply leading-5 text-red-400

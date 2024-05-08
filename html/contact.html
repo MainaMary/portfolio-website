@@ -40,10 +40,10 @@
         </div>
     </header>
     <section class="container my-12 space-y-4">
-        <p class="text-3xl font-[800] leading-12 my-2">Contact</p>
+        <p class="text-xl md:text-3xl font-[800] leading-12 my-2">Contact</p>
         <p class="font-medium text-base">Get in touch for collaborations</p>
         <hr class=" my-4 border-solid border-[1px] border-input" />
-        <div class="w-[60%] flex justify-between h-auto items-center">
+        <div class="w-full md:w-[60%] block md:flex justify-between h-auto items-center">
             <div>
                 <p>ategunabass@gmail.com</p>
                 <p class="text-gray">Email</p>
@@ -55,13 +55,13 @@
             </div>
         </div>
         <div
-            class="flex gap-2 w-[150px] text-center justify-center border-[2px]  border-input rounded-md p-3 h-auto items-center">
+            class=" flex gap-2 w-[200px] md:w-[150px] text-center justify-center border-[2px]  border-input rounded-md p-3 h-auto items-center">
             <i class="fa fa-clone text-gray" aria-hidden="true"></i>
             <p class="text-xs">Copy email</p>
         </div>
         <form class="my-24">
-            <p class="text-3xl font-[800] leading-12 my-2">Send a message</p>
-            <div class="flex w-full justify-between gap-12 ">
+            <p class="text-xl md:text-3xl font-[800] leading-12 my-2">Send a message</p>
+            <div class="block md:flex w-full justify-between gap-12 ">
                 <div class="w-full">
                     <label class="label flex h-auto items-center">Name <span><i
                                 class="fa fa-asterisk text-red-500 text-[8px]" aria-hidden="true"></i>
@@ -81,54 +81,54 @@
                     <span><i class="fa fa-asterisk text-red-500 text-[8px]" aria-hidden="true"></i>
                     </span>
                 </label>
-                <textarea class="w-full bg-input" rows={4}></textarea>
+                <textarea class="w-full bg-input" rows="6" md:rows="4"></textarea>
             </div>
             <button type="submit"
-                class="py-3 px-2 rounded-md text-center text-white border-2 my-3 bg-secondary border-secondary">Send a
+                class="py-3 px-2 w-full rounded-md text-center text-white border-2 my-3 bg-secondary border-secondary">Send a
                 message</button>
         </form>
 
 
     </section>
-    <footer class="bg-black">
-        <div class="container text-lightWhite pt-4 space-y-2">
-            <p class="font-[600] text-2xl">Let's connect</p>
-            <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
-                <li>
-                    <a>Behance</a>
-                </li>
-                <li>
-                    <a>Dribble</a>
-                </li>
-                <li>
-                    <a>LinkedIn</a>
-                </li>
+    <footer class="bg-black text-[14px] md:text-xl">
+    <div class="container text-lightWhite pt-4 space-y-2">
+      <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
+      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
+        <li>
+          <a>Behance</a>
+        </li>
+        <li>
+          <a>Dribble</a>
+        </li>
+        <li>
+          <a>LinkedIn</a>
+        </li>
 
-            </ul>
+      </ul>
 
-            <div class="flex justify-between">
-                <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
-                <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+      <div class="block md:flex justify-between text-[14px] md:text-xl">
+        <p class=" font-medium">Email- ategunabass@gmail.com</p>
+        <ul class="flex gap-8 cursor-pointer font-medium">
 
-                    <li class=>
-                        <a>About</a>
-                    </li>
-                    <li>
-                        <a>Projects</a>
-                    </li>
-                    <li>
-                        <a>Resume</a>
-                    </li>
-                    <li>
-                        <a>Contact</a>
-                    </li>
-                </ul>
+          <li class=>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Resume</a>
+          </li>
+          <li>
+            <a href="../src//html/contact.html">Contact</a>
+          </li>
+        </ul>
 
-            </div>
-            <hr class="mt-4" />
-            <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
-        </div>
-    </footer>
+      </div>
+      <hr class="mt-4" />
+      <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
+    </div>
+  </footer>
 </body>
 <script>
     tailwind.config = {

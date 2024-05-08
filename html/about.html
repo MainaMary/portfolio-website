@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <title>About</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         @layer components {
     .container {
@@ -38,8 +38,8 @@
     </header>
     <!-- hero section -->
     <section class="container">
-        <div class="flex h-auto  justify-between items-center">
-            <div class="w-[60%]">
+        <div class="block md:flex h-auto justify-between items-center">
+            <div class="w-full md:w-[65%] text-center md:text-start font-medium">
 
                 <p class="text-[#B4B4B4] text-2xl font-[800] my-2">Ola Ategun</p>
                 <h2 class="mt-2 mb-4 text-2xl font-[800]">Product designer</h2>
@@ -64,11 +64,11 @@
 
             </div>
 
-            <div class="w-[300px] h-[500px]">
-                <img class="object-cover rounded-md h-auto w-auto" src="../images/aboutImage.png" alt="about-image" />
+            <div class=" w-[250px] md:my-0 my-12  md:w-[300px] h-auto md:h-[500px] m-auto md:m-0">
+                <img class="object-cover rounded-md h-auto w-auto m-auto" src="../images/aboutImage.png" alt="about-image" />
             </div>
         </div>
-        <div>
+        <div class="text-center md:text-start font-medium">
             <p class="text-2xl font-[800] mb-4">
                 Outside design
             </p>
@@ -91,13 +91,13 @@
     <!-- skills section -->
     <section class="container my-6">
         <h2 class="text-2xl font-[800] mb-4">Skills</h2>
-        <ul class="skills grid grid-cols-2 gap-4"></ul>
+        <ul class="skills grid grid-cols-1 md:grid-cols-2 gap-4"></ul>
 
     </section>
     <!-- tools -->
     <section class="container my-6">
         <h2 class="text-2xl font-[800] mb-4">Tools</h2>
-        <ul class="tools grid grid-cols-2 gap-4"></ul>
+        <ul class="tools grid grid-cols-1 md:grid-cols-2 gap-4"></ul>
 
     </section>
     <!-- education -->
@@ -105,7 +105,7 @@
         <h2 class="text-2xl font-[800] mb-4">Education</h2>
 
 
-        <div class="flex font-medium gap-24">
+        <div class="block md:flex font-medium gap-24">
             <h2>2023</h2>
             <div class="flex flex-col space-y-2 text-base ">
                 <span>Red River college</span>
@@ -113,7 +113,7 @@
                 <span>Interaction Design & Web Development</span>
             </div>
         </div>
-        <div class="flex font-medium gap-24 my-8">
+        <div class="block md:flex font-medium gap-24 my-8">
             <h2>2020</h2>
             <div class="flex flex-col space-y-2 text-base ">
 
@@ -126,7 +126,7 @@
     <!-- certification -->
     <section class="container mb-16">
         <h2 class="text-2xl font-[800] mb-4">Certifications</h2>
-        <div class="flex font-medium gap-24 my-8">
+        <div class="block md:flex font-medium gap-24 my-8">
             <h2>2022</h2>
             <div class="flex flex-col space-y-2 text-base ">
 
@@ -135,7 +135,7 @@
 
             </div>
         </div>
-        <div class="flex font-medium gap-24 my-8">
+        <div class="block md:flex font-medium gap-24 my-8">
             <h2>2021</h2>
             <div class="flex flex-col space-y-2 text-base ">
 
@@ -145,7 +145,7 @@
 
             </div>
         </div>
-        <div class="flex font-medium gap-24 my-8">
+        <div class="block md:flex font-medium gap-24 my-8">
             <h2>2021</h2>
             <div class="flex flex-col space-y-2 text-base ">
 
@@ -159,45 +159,45 @@
         </div>
     </section>
     <!-- footer section -->
-    <footer class="bg-black text-white">
-        <div class="container text-lightWhite pt-4 space-y-2">
-            <p class="font-[600] text-2xl">Let's connect</p>
-            <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[18px] font-medium">
-                <li>
-                    <a>Behance</a>
-                </li>
-                <li>
-                    <a>Dribble</a>
-                </li>
-                <li>
-                    <a>LinkedIn</a>
-                </li>
+    <footer class="bg-black text-[14px] md:text-xl">
+    <div class="container text-lightWhite pt-4 space-y-2">
+      <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
+      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
+        <li>
+          <a>Behance</a>
+        </li>
+        <li>
+          <a>Dribble</a>
+        </li>
+        <li>
+          <a>LinkedIn</a>
+        </li>
 
-            </ul>
+      </ul>
 
-            <div class="flex justify-between">
-                <p class="text-[18px] font-medium">Email- ategunabass@gmail.com</p>
-                <ul class="flex gap-8 cursor-pointer text-[18px] font-medium">
+      <div class="block md:flex justify-between text-[14px] md:text-xl">
+        <p class=" font-medium">Email- ategunabass@gmail.com</p>
+        <ul class="flex gap-8 cursor-pointer font-medium">
 
-                    <li class=>
-                        <a>About</a>
-                    </li>
-                    <li>
-                        <a>Projects</a>
-                    </li>
-                    <li>
-                        <a>Resume</a>
-                    </li>
-                    <li>
-                        <a href="../src//html/contact.html">Contact</a>
-                    </li>
-                </ul>
+          <li class=>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Resume</a>
+          </li>
+          <li>
+            <a href="../src//html/contact.html">Contact</a>
+          </li>
+        </ul>
 
-            </div>
-            <hr class="mt-4" />
-            <p class="py-4 text-center text-[18px] font-medium">Made with care I 2023 Abass Ategun</p>
-        </div>
-    </footer>
+      </div>
+      <hr class="mt-4" />
+      <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
+    </div>
+  </footer>
 
 </body>
 <script>
@@ -216,7 +216,6 @@
         }
     }
 </script>
-<script src="https://cdn.tailwindcss.com"></script>
 <script src="../js/index.js"></script>
 
 </html>
