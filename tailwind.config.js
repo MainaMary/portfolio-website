@@ -10,7 +10,12 @@ module.exports = {
         lightBlue: "#F1F1F1",
         lightWhite: "#B4B4B4",
         input: "#F4F5FB",
-        skyBlue:"#F9F9F9"
+        skyBlue: "#F9F9F9",
+      },
+      screens: {
+        sm: "576px",
+        md: "768px",
+        lg: "1024px",
       },
     },
   },
