@@ -42,8 +42,17 @@
     <header class="flex items-center h-24">
         <div class="container">
             <nav class="h-full cursor-pointer flex justify-between items-center">
-                <h2 class="font-semibold text-3xl">Ola Ategun</h2>
-                <ul class="nav-list flex w-1/2 justify-between"></ul>
+                <h2 class="font-semibold text-2xl">Ola Ategun</h2>
+                <div class="block z-[999] md:hidden" id="menuIcon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <ul class="nav-list w-1/2 hidden md:flex justify-between">
+                    <li class="py-2 md:py-0"><a href="../dist/index.html">Home</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/about.html">About</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/eazysend.html">Projects</a></li>
+                    <li class="py-2 md:py-0"><a>Resume</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/contact.html">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -104,7 +113,8 @@
             </p>
             <div>
                 <h4 class="title">Design process</h4>
-                <ul class="block md:flex gap-2 bg-white rounded-md px-2 py-3 justify-center text-center m-auto md:justify-between mb-12">
+                <ul
+                    class="block md:flex gap-2 bg-white rounded-md px-2 py-3 justify-center text-center m-auto md:justify-between mb-12">
                     <li>
                         <a>Research
                         </a>
@@ -269,17 +279,18 @@
         <div class="container">
             <h4 class="sub-title">Brand</h4>
             <h4 class="title">Visual identity</h4>
-            <div class=" grid grid-cols-2 md:grid-cols-3 gap-3 h-auto items-center">
+            <div class=" grid grid-cols-2 md:grid-cols-3 gap-3 h-auto items-center w-full md:w-1/2">
                 <p class="font-semibold text-[90px] md:text-[128px]"><span class="uppercase">A</span>a</p>
-                <div class="flex flex-col md:w-0">
+                <div class="flex flex-col ">
                     <span>Mustica Pro (semi bold)</span>
                     <span>Mustica Pro (medium)</span>
                     <span>Mustica Pro (regular)</span>
                 </div>
                 <div class="relative flex h-auto items-center">
                     <div class="circular-img text-white bg-[#004EC6]">004EC6</div>
-                    <div class="circular-img bg-black text-white absolute right-[-30px] md:right-[-70px]">1E1E1E</div>
-                    <div class="circular-img text-[#7E7E7E] bg-[#FFDAB9] absolute right-[-100px] md:right-[-140px]">FFDAB9</div>
+                    <div class="circular-img bg-black text-white absolute right-[-30px] md:right-[-20px]">1E1E1E</div>
+                    <div class="circular-img text-[#7E7E7E] bg-[#FFDAB9] absolute right-[-100px] md:right-[-90px]">
+                        FFDAB9</div>
                 </div>
 
             </div>

@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
-    <title>Talent Hub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @layer components {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <title>Talent Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
         .container {
           @apply max-w-full w-[1200px] px-5 mx-auto;
         }
@@ -43,280 +39,346 @@
         }
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <header class="flex items-center h-24">
-      <div class="container">
-        <nav class="h-full cursor-pointer flex justify-between items-center">
-          <h2 class="font-semibold text-3xl">Ola Ategun</h2>
-          <ul class="nav-list flex w-1/2 justify-between"></ul>
-        </nav>
-      </div>
-    </header>
-    <section>
-      <div class="background">
-        <div class="container grid grid-cols-3 gap-2">
-          <img src="../images/eazySendHero.png" alt="hero-img" />
-          <img src="../images/eazySendhero2.png" alt="hero-img" />
-          <img src="../images/eazySendHero3.png" alt="hero-img" />
+<body>
+  <header class="flex items-center h-24">
+    <div class="container">
+      <nav class="h-full cursor-pointer flex justify-between items-center">
+        <h2 class="font-semibold text-2xl">Ola Ategun</h2>
+        <div class="block z-[999] md:hidden" id="menuIcon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
+        <ul class="nav-list w-1/2 hidden md:flex justify-between">
+          <li class="py-2 md:py-0"><a href="../dist/index.html">Home</a></li>
+          <li class="py-2 md:py-0"><a href="../html/about.html">About</a></li>
+          <li class="py-2 md:py-0">
+            <a href="../html/talenthub.html">Projects</a>
+          </li>
+          <li class="py-2 md:py-0"><a>Resume</a></li>
+          <li class="py-2 md:py-0">
+            <a href="../html/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="background">
+      <div class="container grid grid-cols-3 gap-2">
+        <img src="../images/eazySendHero.png" alt="hero-img" />
+        <img src="../images/eazySendhero2.png" alt="hero-img" />
+        <img src="../images/eazySendHero3.png" alt="hero-img" />
       </div>
-      <div class="my-12 container">
-        <h2 class="title">Eazysend</h2>
-        <p class="leading-6 text-base">
-          Eazysend is an app for seamless cross-border transactions. Offering a
-          user-friendly interface, it empowers users to effortlessly send,
-          receive, and track funds across different currencies and regions. With
-          advanced security features, the app prioritizes the safety and privacy
-          of transactions, providing users with a reliable and efficient
-          platform for managing their international financial activities.
-        </p>
-        <div class="flex items-center w-1/2 justify-between h-auto mt-12">
-          <div>
-            <h4 class="font-medium">My role</h4>
-            <span> Product Designer</span>
-          </div>
-          <div>
-            <h4 class="font-medium">Timeline</h4>
-            <span>3 months (2023)</span>
-          </div>
-          <div>
-            <h4 class="font-medium">Tools</h4>
-            <psan>Figma, Adobe <br />Photoshop, Smaply</psan>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- overview section -->
-    <section class="background py-12">
-      <div class="container">
-        <h4 class="eazy-sub-title">Overview</h4>
-        <h4>The problem</h4>
-        <p class="my-4">
-          Current solutions for international money transfers suffer from
-          complex interfaces and poor user experiences, causing frustration and
-          inefficiencies. Users struggle to navigate convoluted processes and
-          understand fee structures. There is a clear need for a new app that
-          prioritizes intuitive design and usability, providing a seamless
-          experience for cross-border transactions while ensuring transparency
-          and security..
-        </p>
+    </div>
+    <div class="my-12 container">
+      <h2 class="title">Eazysend</h2>
+      <p class="leading-6 text-base">
+        Eazysend is an app for seamless cross-border transactions. Offering a
+        user-friendly interface, it empowers users to effortlessly send,
+        receive, and track funds across different currencies and regions. With
+        advanced security features, the app prioritizes the safety and privacy
+        of transactions, providing users with a reliable and efficient
+        platform for managing their international financial activities.
+      </p>
+      <div class="grid w- full md:w-1/2  grid-cols-2 md:grid-cols-3h-auto mt-12 ">
         <div>
-          <h4 class="title">Design process</h4>
-          <ul
-            class="flex gap-2 bg-white rounded-md px-2 py-3 justify-between mb-12"
-          >
-            <li><a>Research icon</a></li>
-            <li><a>Analyze icon</a></li>
-            <li><a>Design icon</a></li>
-            <li><a>User testing icon</a></li>
-            <li><a>Iterate icon</a></li>
-            <li><a>Finalize</a></li>
+          <h4 class="font-medium">My role</h4>
+          <span> Product Designer</span>
+        </div>
+        <div>
+          <h4 class="font-medium">Timeline</h4>
+          <span>3 months (2023)</span>
+        </div>
+        <div>
+          <h4 class="font-medium">Tools</h4>
+          <psan>Figma, Adobe <br />Photoshop, Smaply</psan>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- overview section -->
+  <section class="background py-12">
+    <div class="container">
+      <h4 class="eazy-sub-title">Overview</h4>
+      <h4>The problem</h4>
+      <p class="my-4">
+        Current solutions for international money transfers suffer from
+        complex interfaces and poor user experiences, causing frustration and
+        inefficiencies. Users struggle to navigate convoluted processes and
+        understand fee structures. There is a clear need for a new app that
+        prioritizes intuitive design and usability, providing a seamless
+        experience for cross-border transactions while ensuring transparency
+        and security..
+      </p>
+      <div>
+        <h4 class="title">Design process</h4>
+        <ul
+          class="block md:flex gap-2 bg-white rounded-md px-2 py-3 justify-center text-center m-auto md:justify-between mb-12">
+          <li>
+            <a>Research
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+            <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+          </li>
+          <li><a>Analyze </a></li>
+          <li>
+            <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+            <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+          </li>
+          <li><a>Design </a></li>
+          <li>
+            <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+            <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+          </li>
+          <li><a>User testing </a>
+          </li>
+          <li>
+            <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+            <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+          </li>
+          <li><a>Iterate</a>
+          </li>
+          <li>
+            <i class="fa fa-arrow-right hidden  md:block" aria-hidden="true"></i>
+            <i class="fa fa-arrow-down inline-block md:hidden" aria-hidden="true"></i>
+          </li>
+          <li><a>Finalize</a></li>
+        </ul>
+      </div>
+      <div class="block md:flex w-1/2 justify-between">
+        <div>
+          <h4 class="text-base font-weight font-medium">Reasearch Methods</h4>
+          <ul>
+            <li>Online survey (Google form)</li>
+            <li>In-person interview</li>
+            <li>Research online</li>
           </ul>
         </div>
-        <div class="flex w-1/2 justify-between">
-          <div>
-            <h4 class="text-base font-weight font-medium">Reasearch Methods</h4>
-            <ul>
-              <li>Online survey (Google form)</li>
-              <li>In-person interview</li>
-              <li>Research online</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-base font-weight font-medium">Target Users</h4>
-            <ul>
-              <li>Hiring managers</li>
-              <li>IT professionals</li>
-              <li>Clients outsourcing pojects</li>
-            </ul>
-          </div>
+        <div>
+          <h4 class="text-base font-weight font-medium">Target Users</h4>
+          <ul>
+            <li>Hiring managers</li>
+            <li>IT professionals</li>
+            <li>Clients outsourcing pojects</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <div class="container py-12">
-      <h4 class="sub-title">User research</h4>
-      <div class="research-list space-y-2"></div>
     </div>
-    <!-- personas section -->
-    <section class="my-12">
-      <div class="py-12 background">
-        <div class="container">
-          <h4 class="eazy-sub-title">Personas</h4>
-          <h4 class="ttitle my-4">User Persona 1</h4>
-          <div class="flex w-full justify-between gap-12">
-            <div class="font-medium w-[20%]">
-              <img
-                class="w-[80px] object-cover h-[80px] rounded-full"
-                src="../images/persona1.png"
-                alt="persona1"
-              />
-              <p>
-                Mohammed <br />
-                <span class="uppercase">Family practitioner</span>
-              </p>
-            </div>
-
-            <div>
-              <h4 class="eazy-sub-title">Background</h4>
-              <p class="my-4">
-                Mohammed is a 40-year-old married professional living in the
-                United States. He migrated from Egypt ten years ago for better
-                job opportunities. He has a stable job as an accountant and is
-                the primary breadwinner for her family back in Mexico, including
-                his elderly parents and younger siblings.
-              </p>
-              <div class="persona1-details"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-12">
-        <div class="container">
-          <h4 class="eazy-sub-title">Personas</h4>
-          <h4 class="ttitle my-4">User Persona 2</h4>
-          <div class="flex w-full justify-between gap-12">
-            <div class="font-medium w-[20%]">
-              <img
-                class="w-[80px] object-cover h-[80px] rounded-full"
-                src="../images/persona1.png"
-                alt="persona1"
-              />
-              <p>
-                Mohammed <br />
-                <span class="uppercase">Family practitioner</span>
-              </p>
-            </div>
-
-            <div>
-              <h4 class="eazy-sub-title">Background</h4>
-              <p class="my-4">
-                Samuel is a 40-year-old married professional living in the
-                United States. He migrated from Egypt ten years ago for better
-                job opportunities. He has a stable job as an accountant and is
-                the primary breadwinner for her family back in Mexico, including
-                his elderly parents and younger siblings..
-              </p>
-              <div class="persona2-details"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- prototypes section -->
-    <section class="background py-12">
+  </section>
+  <div class="container py-12">
+    <h4 class="sub-title">User research</h4>
+    <div class="research-list space-y-2"></div>
+  </div>
+  <!-- personas section -->
+  <section class="my-12">
+    <div class="py-12 background">
       <div class="container">
-        <h4>Prototypes</h4>
-        <h6>Selected Prototypes</h6>
-        <div class="grid grid-cols-3 gap-3">
-          <img src="../images/screen1.png" alt="img" />
-          <img src="../images/screen2.png" alt="img" />
-          <img src="../images/screen3.png" alt="img" />
-          <img src="../images/screen4.png" alt="img" />
-          <img src="../images/screen5.png" alt="img" />
-          <img src="../images/screen6.png" alt="img" />
-          <img src="../images/screen7.png" alt="img" />
-          <img src="../images/screen8.png" alt="img" />
-          <img src="../images/screen9.png" alt="img" />
-        </div>
-      </div>
-    </section>
-    <!-- brand identity section -->
-    <section class="bg-[#F9F9F9] py-12">
-      <div class="container">
-        <h4 class="sub-title">Brand</h4>
-        <h4 class="title">Visual identity</h4>
-        <div class="flex gap-3 h-auto items-center">
-          <p class="font-semibold text-[128px]">
-            <span class="uppercase">A</span>a
-          </p>
-          <div class="flex flex-col">
-            <span>Mustica Pro (semi bold)</span>
-            <span>Mustica Pro (medium)</span>
-            <span>Mustica Pro (regular)</span>
+        <h4 class="eazy-sub-title">Personas</h4>
+        <h4 class="ttitle my-4">User Persona 1</h4>
+        <div class="block md:flex w-full justify-between gap-12">
+          <div class="font-medium w-[20%]">
+            <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/ellipse1.png" alt="persona1" />
+            <p>
+              Mohammed <br />
+              <span class="uppercase">Family practitioner</span>
+            </p>
           </div>
-          <div class="relative flex h-auto items-center">
-            <div class="circular-img text-white bg-[#1DA260]">1DA260</div>
-            <div
-              class="circular-img bg-[#FDCA3E] text-white absolute right-[-70px]"
-            >
-              FDCA3E
-            </div>
-            <div
-              class="circular-img text-white bg-[#295428] absolute right-[-140px]"
-            >
-              295428
-            </div>
-          </div>
-        </div>
-        <h4 class="title text-center">Image representations</h4>
-        <div class="flex justify-center gap-2">
+
           <div>
-            <img src="../images/brandIdentity.png" alt="brand" />
-            <h4>illustrations</h4>
+            <h4 class="eazy-sub-title">Background</h4>
+            <p class="my-4">
+              Mohammed is a 40-year-old married professional living in the
+              United States. He migrated from Egypt ten years ago for better
+              job opportunities. He has a stable job as an accountant and is
+              the primary breadwinner for her family back in Mexico, including
+              his elderly parents and younger siblings.
+            </p>
+            <div class="persona1-details"></div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="background py-12 mb-4">
-      <h4 class="eazy-sub-title container">High fidelity mockups</h4>
-      <div class="container grid grid-cols-3 gap-4">
-        <img src="../images/mockup12.png" alt="mockup" />
-        <img src="../images/mockup1.png" alt="mockup" />
-        <img src="../images/mockup2.png" alt="mockup" />
-        <img src="../images/mockup3.png" alt="mockup" />
-        <img src="../images/mockup4.png" alt="mockup" />
-        <img src="../images/mockup5.png" alt="mockup" />
-        <img src="../images/mockup6.png" alt="mockup" />
-        <img src="../images/mockup7.png" alt="mockup" />
-        <img src="../images/mockup8.png" alt="mockup" />
-        <img src="../images/mockup9.png" alt="mockup" />
-        <img src="../images/mockup10.png" alt="mockup" />
-        <img src="../images/mockup11.png" alt="mockup" />
-      </div>
-    </section>
-    <div class="container my-12">
-      <h6 class="eazy-sub-title">Conclusion</h6>
-      <h6 class="title">Takeaway</h6>
-      <p>
-        In the process of developing this project, I found that conducting
-        thorough user research and embracing iterative design methodologies were
-        crucial pillars in crafting a successful hiring platform. By immersing
-        myself in the perspectives of both hiring organizations and
-        professionals seeking opportunities, I gained invaluable insights into
-        their needs, pain points, and preferences.
-      </p>
-      <p class="my-8">
-        This empathetic approach not only informed the initial design but also
-        guided iterative refinements throughout the development process. By
-        actively soliciting and incorporating user feedback, I witnessed
-        firsthand the transformative power of user-centered design in driving
-        meaningful improvements and ensuring the platform resonated with its
-        intended audience. This experience reinforced my conviction in the
-        efficacy of user-centric design principles to deliver impactful
-        solutions that truly address the needs of users.
-      </p>
     </div>
-  </body>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#D96767",
-            secondary: "#DE9145",
-            gray: "#8C8A8A",
-            lightBlue: "#F1F1F1",
-            lightWhite: "#B4B4B4",
-            input: "#F6F6F6",
-            skyBlue: "#F9F9F9",
-          },
+    <div class="py-12">
+      <div class="container">
+        <h4 class="eazy-sub-title">Personas</h4>
+        <h4 class="ttitle my-4">User Persona 2</h4>
+        <div class="block md:flex w-full justify-between gap-12">
+          <div class="font-medium w-[20%]">
+            <img class="w-[80px] object-cover h-[80px] rounded-full" src="../images/ellipse2.png" alt="persona1" />
+            <p>
+              Mohammed <br />
+              <span class="uppercase">Family practitioner</span>
+            </p>
+          </div>
+
+          <div>
+            <h4 class="eazy-sub-title">Background</h4>
+            <p class="my-4">
+              Samuel is a 40-year-old married professional living in the
+              United States. He migrated from Egypt ten years ago for better
+              job opportunities. He has a stable job as an accountant and is
+              the primary breadwinner for her family back in Mexico, including
+              his elderly parents and younger siblings..
+            </p>
+            <div class="persona2-details"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- prototypes section -->
+  <section class="background py-12">
+    <div class="container">
+      <h4 class="eazy-sub-title">Prototypes</h4>
+      <h6 class="title">Selected Prototypes</h6>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <img src="../images/screen1.png" alt="img" />
+        <img src="../images/screen2.png" alt="img" />
+        <img src="../images/screen3.png" alt="img" />
+        <img src="../images/screen4.png" alt="img" />
+        <img src="../images/screen5.png" alt="img" />
+        <img src="../images/screen6.png" alt="img" />
+        <img src="../images/screen7.png" alt="img" />
+        <img src="../images/screen8.png" alt="img" />
+        <img src="../images/screen9.png" alt="img" />
+      </div>
+    </div>
+  </section>
+  <!-- brand identity section -->
+  <section class="bg-[#F9F9F9] py-12">
+    <div class="container">
+      <h4 class="eazy-sub-title">Brand</h4>
+      <h4 class="title">Visual identity</h4>
+      <div class=" grid grid-cols-2 md:grid-cols-3 gap-3 h-auto items-center w-full md:w-1/2">
+        <p  class="font-semibold text-[90px] md:text-[128px]">
+          <span class="uppercase">A</span>a
+        </p>
+        <div class="flex flex-col ">
+          <span>Mustica Pro (semi bold)</span>
+          <span>Mustica Pro (medium)</span>
+          <span>Mustica Pro (regular)</span>
+        </div>
+        <div class="relative flex h-auto items-center">
+          <div class="circular-img text-white bg-[#1DA260]">1DA260</div>
+          <div class="circular-img bg-[#FDCA3E] text-white absolute right-[-30px] md:right-[-20px]">
+            FDCA3E
+          </div>
+          <div class="circular-img text-white bg-[#295428] absolute right-[-100px] md:right-[-90px]">
+            295428
+          </div>
+        </div>
+      </div>
+      <h4 class="title text-center">Image representations</h4>
+      <div class="flex justify-center gap-2">
+        <div>
+          <img src="../images/brandIdentity.png" alt="brand" />
+          <h4>illustrations</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="background py-12 mb-4">
+    <h4 class="eazy-sub-title container">High fidelity mockups</h4>
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="../images/mockup12.png" alt="mockup" />
+      <img src="../images/mockup1.png" alt="mockup" />
+      <img src="../images/mockup2.png" alt="mockup" />
+      <img src="../images/mockup3.png" alt="mockup" />
+      <img src="../images/mockup4.png" alt="mockup" />
+      <img src="../images/mockup5.png" alt="mockup" />
+      <img src="../images/mockup6.png" alt="mockup" />
+      <img src="../images/mockup7.png" alt="mockup" />
+      <img src="../images/mockup8.png" alt="mockup" />
+      <img src="../images/mockup9.png" alt="mockup" />
+      <img src="../images/mockup10.png" alt="mockup" />
+      <img src="../images/mockup11.png" alt="mockup" />
+    </div>
+  </section>
+  <div class="container my-12">
+    <h6 class="eazy-sub-title">Conclusion</h6>
+    <h6 class="title">Takeaway</h6>
+    <p>
+      In the process of developing this project, I found that conducting
+      thorough user research and embracing iterative design methodologies were
+      crucial pillars in crafting a successful hiring platform. By immersing
+      myself in the perspectives of both hiring organizations and
+      professionals seeking opportunities, I gained invaluable insights into
+      their needs, pain points, and preferences.
+    </p>
+    <p class="my-8">
+      This empathetic approach not only informed the initial design but also
+      guided iterative refinements throughout the development process. By
+      actively soliciting and incorporating user feedback, I witnessed
+      firsthand the transformative power of user-centered design in driving
+      meaningful improvements and ensuring the platform resonated with its
+      intended audience. This experience reinforced my conviction in the
+      efficacy of user-centric design principles to deliver impactful
+      solutions that truly address the needs of users.
+    </p>
+  </div>
+  <!-- footer section -->
+  <footer class="bg-black text-[14px] md:text-xl">
+    <div class="container text-lightWhite pt-4 space-y-2">
+      <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
+      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
+        <li>
+          <a>Behance</a>
+        </li>
+        <li>
+          <a>Dribble</a>
+        </li>
+        <li>
+          <a>LinkedIn</a>
+        </li>
+
+      </ul>
+
+      <div class="block md:flex justify-between text-[14px] md:text-xl">
+        <p class=" font-medium">Email- ategunabass@gmail.com</p>
+        <ul class="flex gap-8 cursor-pointer font-medium">
+
+          <li class=>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Resume</a>
+          </li>
+          <li>
+            <a href="../src//html/contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <hr class="mt-4" />
+      <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
+    </div>
+  </footer>
+</body>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#D96767",
+          secondary: "#DE9145",
+          gray: "#8C8A8A",
+          lightBlue: "#F1F1F1",
+          lightWhite: "#B4B4B4",
+          input: "#F6F6F6",
+          skyBlue: "#F9F9F9",
         },
       },
-    };
-  </script>
-  <script src="../js/index.js
+    },
+  };
+</script>
+<script src="../js/index.js
     "></script>
-  <script src="../js/eazysend.js"></script>
+<script src="../js/eazysend.js"></script>
+
 </html>

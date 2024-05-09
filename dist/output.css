@@ -684,6 +684,10 @@ video {
   z-index: 40;
 }
 
+.z-\[999\]{
+  z-index: 999;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -747,6 +751,10 @@ video {
   height: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .w-\[10px\]{
   width: 10px;
 }
@@ -793,10 +801,6 @@ video {
 
 .gap-1{
   gap: 0.25rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-12{
@@ -849,6 +853,11 @@ video {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-4{
@@ -946,6 +955,24 @@ video {
   color: rgb(222 145 69 / var(--tw-text-opacity));
 }
 
+.nav-list.show{
+  display: block;
+  position:absolute;
+  right: 0;
+  height: calc(100% - 96px);
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover\:text-\[\#E1A635\.\]:hover{
+  color: #E1A635.;
+}
+
+.hover\:text-\[\#E1A635\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(225 166 53 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px){
   .md\:my-36{
     margin-top: 9rem;
@@ -994,6 +1021,11 @@ video {
 
   .md\:gap-24{
     gap: 6rem;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:py-12{

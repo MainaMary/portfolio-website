@@ -19,3 +19,12 @@
             @apply w-full px-3 py-2 bg-input border-none
         }
 }
+.nav-list.show{
+    display: block;
+    position:absolute;
+    right: 0;
+    height: calc(100% - 96px);
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+
+}

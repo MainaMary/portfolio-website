@@ -34,8 +34,17 @@
     <header class="flex items-center h-24">
         <div class="container">
             <nav class="h-full cursor-pointer flex justify-between items-center">
-                <h2 class="font-semibold text-3xl">Ola Ategun</h2>
-                <ul class="nav-list flex w-1/2 justify-between"></ul>
+                <h2 class="font-semibold text-2xl">Ola Ategun</h2>
+                <div class="block z-[999] md:hidden" id="menuIcon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <ul class="nav-list w-1/2 hidden md:flex justify-between">
+                    <li class="py-2 md:py-0"><a href="#">Home</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/about.html">About</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/eazysend.html">Projects</a></li>
+                    <li class="py-2 md:py-0"><a>Resume</a></li>
+                    <li class="py-2 md:py-0"><a href="../html/about.html">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -84,51 +93,53 @@
                 <textarea class="w-full bg-input" rows="6" md:rows="4"></textarea>
             </div>
             <button type="submit"
-                class="py-3 px-2 w-full rounded-md text-center text-white border-2 my-3 bg-secondary border-secondary">Send a
+                class="py-3 px-2 w-full rounded-md text-center text-white border-2 my-3 bg-secondary border-secondary">Send
+                a
                 message</button>
         </form>
 
 
     </section>
     <footer class="bg-black text-[14px] md:text-xl">
-    <div class="container text-lightWhite pt-4 space-y-2">
-      <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
-      <ul class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
-        <li>
-          <a>Behance</a>
-        </li>
-        <li>
-          <a>Dribble</a>
-        </li>
-        <li>
-          <a>LinkedIn</a>
-        </li>
+        <div class="container text-lightWhite pt-4 space-y-2">
+            <p class="font-medium md:font-[600] text-[14px] md:text-xl">Let's connect</p>
+            <ul
+                class="flex gap-8 cursor-pointer text-lightWhite h-auto items-center text-[14px] md:text-xl  font-medium">
+                <li>
+                    <a>Behance</a>
+                </li>
+                <li>
+                    <a>Dribble</a>
+                </li>
+                <li>
+                    <a>LinkedIn</a>
+                </li>
 
-      </ul>
+            </ul>
 
-      <div class="block md:flex justify-between text-[14px] md:text-xl">
-        <p class=" font-medium">Email- ategunabass@gmail.com</p>
-        <ul class="flex gap-8 cursor-pointer font-medium">
+            <div class="block md:flex justify-between text-[14px] md:text-xl">
+                <p class=" font-medium">Email- ategunabass@gmail.com</p>
+                <ul class="flex gap-8 cursor-pointer font-medium">
 
-          <li class=>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Projects</a>
-          </li>
-          <li>
-            <a>Resume</a>
-          </li>
-          <li>
-            <a href="../src//html/contact.html">Contact</a>
-          </li>
-        </ul>
+                    <li class=>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Resume</a>
+                    </li>
+                    <li>
+                        <a href="../src//html/contact.html">Contact</a>
+                    </li>
+                </ul>
 
-      </div>
-      <hr class="mt-4" />
-      <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
-    </div>
-  </footer>
+            </div>
+            <hr class="mt-4" />
+            <p class="py-4 text-center text-[14px] md:text-xl font-medium">Made with care I 2023 Abass Ategun</p>
+        </div>
+    </footer>
 </body>
 <script>
     tailwind.config = {

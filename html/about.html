@@ -28,14 +28,23 @@
 </head>
 
 <body>
-    <header class="flex items-center h-24">
-        <div class="container">
-            <nav class="h-full cursor-pointer flex justify-between items-center">
-                <h2 class="text-black">Ola Ategun</h2>
-                <ul class="nav-list flex gap-10"></ul>
-            </nav>
+   <header class="flex items-center h-24">
+    <div class="container">
+      <nav class="h-full cursor-pointer flex justify-between items-center">
+        <h2 class="font-semibold text-2xl">Ola Ategun</h2>
+        <div class="block z-[999] md:hidden" id="menuIcon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-    </header>
+        <ul class="nav-list w-1/2 hidden md:flex justify-between">
+          <li class="py-2 md:py-0"><a href="../dist/index.html">Home</a></li>
+          <li class="py-2 md:py-0"><a href="#">About</a></li>
+          <li class="py-2 md:py-0"><a href="../html/eazysend.html">Projects</a></li>
+          <li class="py-2 md:py-0"><a>Resume</a></li>
+          <li class="py-2 md:py-0"><a href="../html/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <!-- hero section -->
     <section class="container">
         <div class="block md:flex h-auto justify-between items-center">

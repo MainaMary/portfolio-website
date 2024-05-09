@@ -68,13 +68,34 @@ const tools = [
   "Google Analytics",
   "Samply",
 ];
-const listContainer = document.querySelector(".nav-list");
-const projectContainer = document.querySelector(".projects-card");
-navItems.map((item) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = item.label;
-  listItem.classList.add("list-items");
-  listContainer.appendChild(listItem);
+// const listContainer = document.querySelector(".nav-list");
+// const projectContainer = document.querySelector(".projects-card");
+// navItems.map((item) => {
+//   const listItem = document.createElement("li");
+//   listItem.textContent = item.label;
+//   listItem.classList.add("list-items");
+//   listContainer.appendChild(listItem);
+// });
+const menuIcon = document.getElementById("menuIcon");
+const navList = document.querySelector(".nav-list");
+
+menuIcon.addEventListener("click", () => {
+  if (navList.style.display === "none" || navList.style.display === "") {
+    navList.style.display = "block";
+    navList.style.position = "absolute";
+    navList.style.left = "0";
+    navList.style.top = "0";
+    navList.style.transform = "translateX(0)";
+    navList.style.backgroundColor = "#f6f6f6";
+    navList.style.zIndex = "999";
+    navList.style.textAlign = "center";
+    navList.style.width = "60%";
+  } else {
+    navList.style.display = "none";
+    navList.style.position = "";
+    navList.style.left = "";
+    navList.style.transform = "";
+  }
 });
 
 projects.map((item) => {
@@ -111,7 +132,7 @@ skills.map((item) => {
   skillsCard.appendChild(listItem);
 });
 
-//iterate through tools
+// iterate through tools
 const toolsCard = document.querySelector(".tools");
 tools.map((item) => {
   const listItem = document.createElement("li");
@@ -126,22 +147,3 @@ const researchSkills = [
   "In person interview",
   "Research online",
 ];
-// const researchCard = document.querySelector(".research-skills");
-// researchSkills.map((item) => {
-//   const listItem = document.createElement("li");
-//   listItem.textContent = item.label;
-//   researchCard.appendChild(listItem);
-// });
-
-//target users
-const users = [
-  "Hiring managers",
-  "IT professionals",
-  "Clients outsourcing projects",
-];
-// const targetContainer = document.querySelector(".target-users");
-// users.map((item) => {
-//   const listItem = document.createElement("li");
-//   listItem.textContent = item.label;
-//   targetContainer.appendChild(listItem);
-// });
