@@ -1,6 +1,11 @@
+body{
+/* font-family: 'Mustica Pro Sans Serif', sans-serif; */
+font-weight: normal;
+font-family: 'Mustica Pro Sans Serif', sans-serif;
+}
 .skill-list{
  background-color: #F6F6F6;
- padding: 12px 16px;
+ padding: 32px 20px;
  font-weight: 600;
  font-size: 16px;
 }
@@ -8,5 +13,4 @@
     font-size:20px;
     font-weight: 500;
     width: 60%;
-
 }
