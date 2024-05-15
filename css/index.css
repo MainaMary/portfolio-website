@@ -14,3 +14,6 @@ font-family: 'Mustica Pro Sans Serif', sans-serif;
     font-weight: 500;
     width: 60%;
 }
+#contact-btn.active{
+    background-color: #1E1E1E;
+}
