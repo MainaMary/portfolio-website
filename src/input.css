@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
     .container {
-        @apply max-w-full w-[1200px] px-5 mx-auto
+        @apply max-w-full w-[800px] md:w-[1200px] px-5 mx-auto
     }
         .list-item {
             @apply leading-5 text-red-400
@@ -16,6 +16,15 @@
         .input {
             @apply w-full px-3 py-2 bg-input border-none
         }
+        .nav-link{
+            @apply py-2 md:py-0
+        }
+        .nav-link:hover {
+             @apply text-[#E1A635];
+         }
+         .home-title{
+            @apply text-base md:text-3xl font-medium leading-12 my-2
+         }
 }
 .nav-list.show{
     display: block;
