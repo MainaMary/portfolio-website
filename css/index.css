@@ -17,3 +17,13 @@ font-family: 'Mustica Pro Sans Serif', sans-serif;
 #contact-btn.active{
     background-color: #1E1E1E;
 }
+/* nav link styling */
+.nav-list li a{
+    color:#8C8A8A;
+}
+.nav-list li a:hover{
+    color:#E1A635
+}
+.nav-list li a.active{
+    color: black;
+}
