@@ -68,36 +68,40 @@ const tools = [
   "Google Analytics",
   "Samply",
 ];
-// const listContainer = document.querySelector(".nav-list");
-// const projectContainer = document.querySelector(".projects-card");
-// navItems.map((item) => {
-//   const listItem = document.createElement("li");
-//   listItem.textContent = item.label;
-//   listItem.classList.add("list-items");
-//   listContainer.appendChild(listItem);
-// });
+
 const menuIcon = document.getElementById("menuIcon");
 const navList = document.querySelector(".nav-list");
+const navLink = document.querySelectorAll(".nav-link");
+const closeNavIcon = document.querySelector(".close-icon");
+const currentPath = window.location.pathname;
 
+navLink.forEach((link) => {
+  if (link.href.includes(currentPath)) {
+    console.log({ currentPath });
+    link.classList.add("active");
+  }
+});
 menuIcon.addEventListener("click", () => {
   if (navList.style.display === "none" || navList.style.display === "") {
     navList.style.display = "block";
     navList.style.position = "absolute";
-    navList.style.left = "0";
-    navList.style.top = "0";
+    navList.style.right = "0px";
+    navList.style.borderRadius = "10px";
+    navList.style.top = "0px";
+    navList.style.padding = "10px";
     navList.style.transform = "translateX(0)";
-    navList.style.backgroundColor = "#f6f6f6";
+    navList.style.backgroundColor = "#ffffff";
     navList.style.zIndex = "999";
     navList.style.textAlign = "center";
-    navList.style.width = "60%";
+    navList.style.width = "40%";
+    navList.style.boxShadow = " 0 0 3px #777";
   } else {
     navList.style.display = "none";
-    navList.style.position = "";
-    navList.style.left = "";
-    navList.style.transform = "";
   }
 });
-
+closeNavIcon.addEventListener("click", () => {
+  navList.style.display = "none";
+});
 projects.map((item) => {
   const card = document.createElement("div");
   const imageCard = document.createElement("div");
