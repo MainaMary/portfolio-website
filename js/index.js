@@ -87,13 +87,13 @@ menuIcon.addEventListener("click", () => {
     navList.style.position = "absolute";
     navList.style.right = "0px";
     navList.style.borderRadius = "10px";
-    navList.style.top = "0px";
+    navList.style.top = "40px";
     navList.style.padding = "10px";
     navList.style.transform = "translateX(0)";
     navList.style.backgroundColor = "#ffffff";
     navList.style.zIndex = "999";
     navList.style.textAlign = "center";
-    navList.style.width = "40%";
+    navList.style.width = "30%";
     navList.style.boxShadow = " 0 0 3px #777";
   } else {
     navList.style.display = "none";
