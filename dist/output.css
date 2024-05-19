@@ -766,6 +766,10 @@ video {
   height: 380px;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1051,10 +1055,6 @@ video {
 
   .md\:h-\[500px\] {
     height: 500px;
-  }
-
-  .md\:h-\[70\%\] {
-    height: 70%;
   }
 
   .md\:w-\[300px\] {
