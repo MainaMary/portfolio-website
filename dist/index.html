@@ -71,14 +71,18 @@
           </div>
         </div>
       </div>
-      <!-- overlapping images -->
-      <div class="relative ">
-        <div class="w-[600px] md:w-[350px] h-[380px] md:h-[500px] flex justify-center m-auto max-w-full md:block ">
-          <img class="w-auto m-auto md:w-full rounded-lg object-cover absolute z-40  h-full left-[2px] md:left-[-12px]"
+      <!-- desktop overlapping images -->
+      <div class="relative hidden md:block ">
+        <div class="w-full md:w-[350px] h-[380px] md:h-[500px] flex justify-center m-auto  md:block ">
+          <img class="w-auto m-auto md:w-auto rounded-2xl object-cover absolute z-40  h-full left-[2px] md:left-[-22px]"
             src="../images/heroImage.png" alt="heroimage" />
-          <img class="rounded-lg m-auto w-auto md:w-auto h-full absolute z-20  md:left-[2px] top-3 object-cover"
+          <img class="rounded-2xl m-auto w-auto md:w-auto h-full absolute z-20 left-[36px]  md:left-[2px] top-6 object-cover"
             src="../images/heroImage2.svg" alt="hero-image" />
         </div>
+      </div>
+      <!-- mobile view overlapping images -->
+      <div class=" block md:hidden">
+        <img class="w-full h-auto object-cover"  src="../images/heroImgMobile.png" alt="her-img-mobile"/>
       </div>
       <!-- mobile design -->
       <div class="flex flex-col md:hidden m-auto space-y-2 my-8  text-[12px] md:text-xl font-medium leading-6">
