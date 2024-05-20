@@ -93,7 +93,7 @@ menuIcon.addEventListener("click", () => {
     navList.style.backgroundColor = "#ffffff";
     navList.style.zIndex = "999";
     navList.style.textAlign = "center";
-    navList.style.width = "40%";
+    navList.style.width = "150px";
     navList.style.boxShadow = " 0 0 3px #777";
   } else {
     navList.style.display = "none";
