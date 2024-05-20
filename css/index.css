@@ -28,14 +28,3 @@ font-family: 'Mustica Pro Sans Serif', sans-serif;
     color: black;
 }
 
-@media screen and (max-width: 768px) {
- .nav-list{
-    display: none;
- }
- #menuIcon{
-    display: block;
- }
- .close-icon{
-    display: block;
- }
-}
